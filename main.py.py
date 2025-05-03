@@ -46,8 +46,8 @@ if __name__ == '__main__':
     ])
 
     # Load the dataset from the local directory
-    train_dir = '/home/224F8578gianfranco/LORCA/train/'
-    test_dir = '/home/224F8578gianfranco/LORCA/test/'
+    train_dir = '/home/224J6611pablo/CV1/skin_cancer_dataset/train-20240324T151905Z-001/' 
+    test_dir = '/home/224J6611pablo/CV1/skin_cancer_dataset/test-20240324T151902Z-001/'
     train_dataset = datasets.ImageFolder(root=train_dir, transform=transform_train)
     test_dataset = datasets.ImageFolder(root=test_dir, transform=transform_test)
    
@@ -210,7 +210,7 @@ if __name__ == '__main__':
     print(f"Training time: {end_time - start_time:.2f} seconds")
 
     # Vamos a guardar el modelo entrenado
-    path_res = '/home/224F8578gianfranco/LORCA/'
+    path_res = '/home/224J6611pablo/CV1/'
 
     # Vamos a guardar el modelo entrenado
     torch.save(model.state_dict(), path_res + '/resnet18_skin_cancer_model_F.pth')
