@@ -100,7 +100,7 @@ if __name__ == '__main__':
         nn.ReLU(),
         nn.Dropout(p=0.25),
         nn.Linear(512, len(train_dataset.classes)),
-        nn.Softmax(dim=1)
+        
     )
 
     #model.fc = nn.Linear(num_features, len(train_dataset.classes))
@@ -132,7 +132,7 @@ if __name__ == '__main__':
     print(f"Using device: {device}")
 
     # Define the number of epochs for training
-    num_epochs = 100
+    num_epochs = 50
 
     # Let's get a model summary
     print()
